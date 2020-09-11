@@ -12,42 +12,26 @@ public class CartasEnLaMano : MonoBehaviour
     public List<GameObject> referenciasDeCartas;
     [SerializeField] private ClicksDeLaCarta click;
     [SerializeField] private bool TodasLascartasEnlaMano = false;
+    [SerializeField] private int cantidadDeCartasMaxima;
 
     public void TomarCartas()
     {
-        //Limitamos el número de cartas que vamos a poder tener en la mano
-        if (TodasLascartasEnlaMano == false)
+        bool sePuedeTomarMasCartas = cartasDeLaMano.Count < cantidadDeCartasMaxima;
+
+        if (sePuedeTomarMasCartas)
         {
             Carta carta = baraja.TomarCarta();
             cartasDeLaMano.Add(carta);
             MostrarMano();
-
         }
-        //Cuando tengamos 5 cartas en la mano no podremos tener más
-        if (cartasDeLaMano.Count == 5)
-        {
-            TodasLascartasEnlaMano = true;
-        }
-        //Mientras que no tengamos las 5 cartas en la mano la booleana seguirá siendo false
-        else
-        {
-            TodasLascartasEnlaMano = false;
-        }
-
     }
 
     public void UsarCarta(Carta cartaUtilizada)
     {
-        /*foreach (Carta c in cartasDeLaMano)
-        { 
-            if(c.Nombre == cartaUtilizada.Nombre)
-            {
-                cartasDeLaMano.RemoveAt(cartasDeLaMano.IndexOf(c));
-            }
-        }*/
         for (int i = cartasDeLaMano.Count - 1; i >= 0; i--)
         {
-            if (cartasDeLaMano[i].Nombre == cartaUtilizada.Nombre)
+            bool esLaMismaCarta = cartasDeLaMano[i].Nombre == cartaUtilizada.Nombre;
+            if (esLaMismaCarta)
             {
                 cartasDeLaMano.RemoveAt(i);
                 Destroy(cartaUtilizada.transform.parent.gameObject);
@@ -55,7 +39,6 @@ public class CartasEnLaMano : MonoBehaviour
             }
 
         }
-
         MostrarMano();
     }
 
@@ -69,11 +52,9 @@ public class CartasEnLaMano : MonoBehaviour
             Destroy(c.gameObject);
         }
 
-        int incremento = 20;
+        int incremento = 35;
 
         bool esImpar = cartasDeLaMano.Count % 2 != 0;
-
-        int ordeInLayer = 0;
 
         foreach (Carta c in cartasDeLaMano)
         {
@@ -84,16 +65,13 @@ public class CartasEnLaMano : MonoBehaviour
             referenciasDeCartas.Add(objeto);
             //Tomar x cartas de la baraja y agregarlas a la mano
             Carta cartaInstanciada = GameObject.Instantiate(c, objeto.transform);//instanciamos la carta
-            ordeInLayer++;
             cartaInstanciada.click = click;
 
             //le damos rotacion
             if (!esImpar)
             {
-
                 if (positivo <= negativo)
                 {
-
                     Vector3 rotacion = objeto.transform.rotation.eulerAngles;
                     rotacion.z = incremento;
                     objeto.transform.eulerAngles = rotacion;
@@ -107,7 +85,7 @@ public class CartasEnLaMano : MonoBehaviour
                     objeto.transform.eulerAngles = rotacion;
                     negativo++;
                     cartaInstanciada.gameObject.GetComponent<SpriteRenderer>().sortingOrder = incremento * -1 * -1;
-                    incremento += 50;
+                    incremento += 40;
                 }
             }
             else

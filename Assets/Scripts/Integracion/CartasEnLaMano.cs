@@ -11,12 +11,29 @@ public class CartasEnLaMano : MonoBehaviour
     public GameObject referenciaDePosicionDeCarta;
     public List<GameObject> referenciasDeCartas;
     [SerializeField] private ClicksDeLaCarta click;
+    [SerializeField] private bool TodasLascartasEnlaMano = false;
 
     public void TomarCartas()
     {
-        Carta carta = baraja.TomarCarta();
-        cartasDeLaMano.Add(carta);
-        MostrarMano();
+        //Limitamos el número de cartas que vamos a poder tener en la mano
+        if (TodasLascartasEnlaMano == false)
+        {
+            Carta carta = baraja.TomarCarta();
+            cartasDeLaMano.Add(carta);
+            MostrarMano();
+
+        }
+        //Cuando tengamos 5 cartas en la mano no podremos tener más
+        if (cartasDeLaMano.Count == 5)
+        {
+            TodasLascartasEnlaMano = true;
+        }
+        //Mientras que no tengamos las 5 cartas en la mano la booleana seguirá siendo false
+        else
+        {
+            TodasLascartasEnlaMano = false;
+        }
+
     }
 
     public void UsarCarta(Carta cartaUtilizada)
@@ -30,10 +47,15 @@ public class CartasEnLaMano : MonoBehaviour
         }*/
         for (int i = cartasDeLaMano.Count - 1; i >= 0; i--)
         {
-            if (cartasDeLaMano[i].Nombre == cartaUtilizada.Nombre) cartasDeLaMano.RemoveAt(i);
-            break;
+            if (cartasDeLaMano[i].Nombre == cartaUtilizada.Nombre)
+            {
+                cartasDeLaMano.RemoveAt(i);
+                Destroy(cartaUtilizada.transform.parent.gameObject);
+                break;
+            }
+
         }
-        //cartasDeLaMano.RemoveAt();
+
         MostrarMano();
     }
 
@@ -68,7 +90,7 @@ public class CartasEnLaMano : MonoBehaviour
             //le damos rotacion
             if (!esImpar)
             {
-                
+
                 if (positivo <= negativo)
                 {
 
@@ -85,7 +107,7 @@ public class CartasEnLaMano : MonoBehaviour
                     objeto.transform.eulerAngles = rotacion;
                     negativo++;
                     cartaInstanciada.gameObject.GetComponent<SpriteRenderer>().sortingOrder = incremento * -1 * -1;
-                    incremento += 20;
+                    incremento += 50;
                 }
             }
             else

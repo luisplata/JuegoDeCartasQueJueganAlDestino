@@ -10,10 +10,13 @@ public class ControladorMenuOpciones : MonoBehaviour
     [SerializeField] public bool menuOpcionesActivo;
     ControladorMenuPausa controladorMenuPausa;
 
+    public float rbgValue = 0.5f;
+
     private void Start()
     {
         controladorMenuPausa = GetComponent<ControladorMenuPausa>();
     }
+
     public void VolverAlMenuPrincipal()
     {
         controladorMenuPausa.estaPausado = true;

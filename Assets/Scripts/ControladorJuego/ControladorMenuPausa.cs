@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ControladorMenuPausa : MonoBehaviour
 {
@@ -12,10 +13,18 @@ public class ControladorMenuPausa : MonoBehaviour
 
     ControladorMenuOpciones controladorMenuOpciones;
 
+    public AudioSource audioSource;
+    public Slider sliderVolumen;
+
+
     private void Start()
     {
         controladorMenuOpciones = GetComponent<ControladorMenuOpciones>();
         controladorMenuOpciones.menuOpcionesActivo = true;
+
+        sliderVolumen.value = 1f;
+        audioSource = GetComponent<AudioSource>();
+
     }
     // Start is called before the first frame update
     void Update()
@@ -25,9 +34,10 @@ public class ControladorMenuPausa : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && controladorMenuOpciones.menuOpcionesActivo == true)
         {
             ponerPausaAlJuego();
-
         }
     }
+
+
     //Vamos a pausar el juego 
     public void ponerPausaAlJuego()
     {
@@ -57,5 +67,10 @@ public class ControladorMenuPausa : MonoBehaviour
     public void VolverAlMenuPrincipal()
     {
         SceneManager.LoadScene("MenuPrincipal");
+    }
+    public void ControladorVolumen()
+    {
+
+        audioSource.volume = sliderVolumen.value;
     }
 }

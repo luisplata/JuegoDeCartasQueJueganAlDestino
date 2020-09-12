@@ -5,8 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ControladorEscena : MonoBehaviour
 {
-    public void ComenzarPartida()
+    public void EntrarCinematica()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Cinematica");
+    }
+
+    public void EntrarAlTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void EntrarAlJuego()
+    {
+        SceneManager.LoadScene("Game");
     }
 }

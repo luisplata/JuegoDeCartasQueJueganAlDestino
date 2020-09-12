@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8460438947454045410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8460438947454045408}
+  - component: {fileID: 8460438947454045409}
+  m_Layer: 0
+  m_Name: Baraja
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8460438947454045408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8460438947454045410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7300896, y: 0.31889603, z: -0.5019531}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8460438947454045409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8460438947454045410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e930bd049f25a4bbdaa115143d46e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartas:
+  - {fileID: 8613890973403795317, guid: d0c940ba2c8495047bfd69f6c51febae, type: 3}
+  - {fileID: 3582094139168973562, guid: dd744c5aa286eac4b846e79734242b7c, type: 3}
+  - {fileID: 4142682803727885000, guid: 16d5ad11d8591334ca1b864ac876f402, type: 3}
+  - {fileID: 4366521718719376319, guid: 1c43da6c9a6986d498233ab6eca9538b, type: 3}
+  - {fileID: 5387619973751997425, guid: d3404cd3e433bd74bb7c161b9be74469, type: 3}
+  - {fileID: 1702760990780042083, guid: afa8fd5f4b07f644cae754c477f56846, type: 3}

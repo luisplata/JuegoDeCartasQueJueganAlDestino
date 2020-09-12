@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Evento : MonoBehaviour
 {
     [SerializeField] private TiposElegibles tipo;
     [SerializeField] private List<Evento> eventosSiguientes;
-    [SerializeField] private bool esElEventoFinal;
+    [SerializeField] private bool esElEventoFinal, esElTutorial;
     [SerializeField] private GameObject escenaMontada;
     public void ComenzarEscena()
     {
@@ -25,6 +26,11 @@ public class Evento : MonoBehaviour
 
     public Evento SiguienteEvento(Carta carta)
     {
+        //si es el evento final y estamos en el tutorial nos vamos a la siguiente escena
+        if (esElEventoFinal && esElTutorial)
+        {
+            SceneManager.LoadScene("Game");
+        }
         if (eventosSiguientes.Count <= 0)
         {
             throw new SiguienteEventoNotFoundException("El evento " + gameObject.name + " no tiene eventos siguiente");

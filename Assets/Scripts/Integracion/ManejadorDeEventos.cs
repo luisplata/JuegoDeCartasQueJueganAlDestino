@@ -36,4 +36,14 @@ public class ManejadorDeEventos : MonoBehaviour
             eventoActual.ComenzarEscena();
         }
     }
+
+    public void SiguienteEscenaTutorial()
+    {
+        Debug.Log("Carga la escena del tutorial");
+        eventoActual = listaDeEventos[0];
+        //instanciamos
+        eventoActual = Instantiate(eventoActual, referencia.transform);
+        //mostramos la escena
+        eventoActual.ComenzarEscena();
+    }
 }

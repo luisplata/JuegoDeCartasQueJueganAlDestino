@@ -13,10 +13,10 @@ public class ManejadorDeEventos : MonoBehaviour
         referencia = new GameObject();
     }
 
-    public void SiguienteEscena()
+    public void SiguienteEscena(Carta carta)
     {
         //comprobar primero miramos si tenemos escena cargada
-        if(eventoActual == null)
+        if (eventoActual == null)
         {
             eventoActual = listaDeEventos[0];
             //instanciamos
@@ -26,7 +26,7 @@ public class ManejadorDeEventos : MonoBehaviour
         }
         else
         {
-            eventoReferencia = eventoActual.SiguienteEvento();
+            eventoReferencia = eventoActual.SiguienteEvento(carta);
             eventoActual.TerminarEscena();
             //destruimos el game object
             Destroy(eventoActual.gameObject);
@@ -35,11 +35,5 @@ public class ManejadorDeEventos : MonoBehaviour
             //mostramos la escena
             eventoActual.ComenzarEscena();
         }
-    }
-
-
-    private void OnMouseDown()
-    {
-        SiguienteEscena();
     }
 }

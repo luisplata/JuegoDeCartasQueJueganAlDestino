@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5302450501262501720
+--- !u!1 &2554755687746699227
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4151724827247442466}
-  - component: {fileID: 3754539907027964635}
+  - component: {fileID: 4982013556356484413}
+  - component: {fileID: 413406681691681380}
   m_Layer: 0
-  m_Name: EventoDeLaCasa
+  m_Name: EventoPrecipicio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4151724827247442466
+--- !u!4 &4982013556356484413
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302450501262501720}
+  m_GameObject: {fileID: 2554755687746699227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5758748, y: 0.1830779, z: -0.7395319}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3754539907027964635
+--- !u!114 &413406681691681380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302450501262501720}
+  m_GameObject: {fileID: 2554755687746699227}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cbf37ec286137d4899d2d5ecd9fd466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 0
-  eventosSiguientes:
-  - {fileID: 3942131937659115217, guid: 82b702a096f2f8247b76a2deebbf8b69, type: 3}
-  - {fileID: 5130223095069061198, guid: 50e76a0e74e349d49889c612a21dfac3, type: 3}
+  eventosSiguientes: []
   esElEventoFinal: 0
-  escenaMontada: {fileID: 7123586780298904613, guid: b9bb9ea986e39e54e8eaabdd0a8dfd21,
+  escenaMontada: {fileID: 6305760930937456552, guid: 3a4abd71d4cd2d4448846044c552c263,
     type: 3}

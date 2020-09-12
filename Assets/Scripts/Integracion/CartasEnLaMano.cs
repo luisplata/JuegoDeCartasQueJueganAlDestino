@@ -96,4 +96,10 @@ public class CartasEnLaMano : MonoBehaviour
 
     }
 
+    private void OnMouseDown()
+    {
+        Debug.Log("Click");
+        TomarCartas();
+    }
+
 }

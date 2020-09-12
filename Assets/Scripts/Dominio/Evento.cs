@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Excepciones;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Evento : MonoBehaviour
 {
@@ -22,13 +23,26 @@ public class Evento : MonoBehaviour
 
     public bool FinalizoElUltimoActo => escenaMontada.GetComponent<Escenario>().FinalizoLaAnimacion;
 
-    public Evento SiguienteEvento()
+    public Evento SiguienteEvento(Carta carta)
     {
-        if(eventosSiguientes.Count <= 0)
+        if (eventosSiguientes.Count <= 0)
         {
             throw new SiguienteEventoNotFoundException("El evento " + gameObject.name + " no tiene eventos siguiente");
         }
-        int indexDelSiguienteElemento = 0;
-        return eventosSiguientes[indexDelSiguienteElemento];
+        Evento resultado = null;
+
+        foreach (Evento e in eventosSiguientes)
+        {
+            if (e.tipo == carta.Tipo)
+            {
+                resultado = e;
+                break;
+            }
+        }
+        if (resultado == null)
+        {
+            throw new Exception("no encontramos el escenario siguiente");
+        }
+        return resultado;
     }
 }

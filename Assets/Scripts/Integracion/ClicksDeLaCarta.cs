@@ -9,10 +9,11 @@ namespace Assets.Scripts.Integracion
     {
         [SerializeField] private TextMeshProUGUI texto;
         [SerializeField] private CartasEnLaMano cartasEnLaMano;
+        [SerializeField] private ManejadorDeEventos manejadorDeEventos;
         public override void OnClick(Carta carta)
         {
-            Debug.Log(">>>>>Se hizo click en la carta " + carta.name + carta.Tipo + carta.Puntaje);
-            texto.text = "La Carta tiene este tipo " + carta.Tipo + " y valor de " + carta.Puntaje;
+
+            manejadorDeEventos.SiguienteEscena(carta);
             cartasEnLaMano.UsarCarta(carta);
         }
     }

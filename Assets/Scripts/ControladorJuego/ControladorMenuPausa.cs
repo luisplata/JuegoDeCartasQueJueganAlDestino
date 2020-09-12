@@ -70,7 +70,6 @@ public class ControladorMenuPausa : MonoBehaviour
     }
     public void ControladorVolumen()
     {
-
         audioSource.volume = sliderVolumen.value;
     }
 }

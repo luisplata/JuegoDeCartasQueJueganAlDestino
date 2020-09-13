@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -15,17 +16,17 @@ public class Escenario : MonoBehaviour
         playableDirector.Play();
     }
 
-    public void UltimoActo()
+    public async Task UltimoActo()
     {
         playableDirector.playableAsset = Instantiate(PlayableSalida);
         playableDirector.Play();
-        StartCoroutine(PuedeContinuarConLaEjecucion());
+        await PuedeContinuarConLaEjecucion();
     }
 
-    IEnumerator PuedeContinuarConLaEjecucion()
+    private async Task PuedeContinuarConLaEjecucion()
     {
         Debug.Log("Antes");
-        yield return new WaitForSeconds((float)playableDirector.duration);
+        await Task.Delay(TimeSpan.FromSeconds(playableDirector.duration));
         Debug.Log("Despues");
     }
 

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ControladorEscena : MonoBehaviour
 {
+    
     public void EntrarCinematica()
     {
         SceneManager.LoadScene("Cinematica");

@@ -288,9 +288,10 @@ MonoBehaviour:
   - {fileID: 8737254566622846609}
   - {fileID: 8737254566817914604}
   m_Bounds:
-    m_Center: {x: 1.594731, y: 0.051730275, z: 0}
-    m_Extent: {x: 1.8756115, y: 0.8380383, z: 0}
+    m_Center: {x: -0.16421187, y: -1.6849619, z: 0}
+    m_Extent: {x: 0.6700002, y: 1.9358906, z: 0}
   m_UseBatching: 1
+  m_AlwaysUpdate: 1
 --- !u!1 &8737254566694803324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2131,7 @@ GameObject:
   - component: {fileID: 8737254567944606485}
   - component: {fileID: 8737254567944606483}
   - component: {fileID: 8737254567944606482}
+  - component: {fileID: 949391182}
   m_Layer: 0
   m_Name: cuerpo
   m_TagString: Untagged
@@ -2233,6 +2235,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &949391182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737254567944606484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85186784d9f73c84baaff181caebe120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8737254567985310004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,9 +2379,10 @@ MonoBehaviour:
   - {fileID: 8737254568024512193}
   - {fileID: 8737254568014413368}
   m_Bounds:
-    m_Center: {x: -0.30862892, y: -1.086151, z: 0}
-    m_Extent: {x: 1.5628121, y: 1.29746, z: 0}
+    m_Center: {x: -1.7383542, y: -1.7650027, z: 0}
+    m_Extent: {x: 0.67000026, y: 1.9358907, z: 0}
   m_UseBatching: 1
+  m_AlwaysUpdate: 1
 --- !u!1 &8737254568014413371
 GameObject:
   m_ObjectHideFlags: 0
@@ -3059,9 +3074,10 @@ MonoBehaviour:
   - {fileID: 8737254568273054292}
   - {fileID: 8737254567421984154}
   m_Bounds:
-    m_Center: {x: -4.977035, y: -0.8878648, z: 0}
-    m_Extent: {x: 1.7758384, y: 1.1834395, z: 0}
+    m_Center: {x: -3.7660623, y: -1.6849619, z: 0}
+    m_Extent: {x: 0.67000043, y: 1.9358906, z: 0}
   m_UseBatching: 1
+  m_AlwaysUpdate: 1
 --- !u!1 &8737254568597107668
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,9 +3180,10 @@ MonoBehaviour:
   - {fileID: 8737254567150780291}
   - {fileID: 8737254567771833328}
   m_Bounds:
-    m_Center: {x: -6.556233, y: -0.23960131, z: 0}
-    m_Extent: {x: 1.911489, y: 0.74325967, z: 0}
+    m_Center: {x: -5.1000752, y: -1.604921, z: 0}
+    m_Extent: {x: 0.67000055, y: 1.9358906, z: 0}
   m_UseBatching: 1
+  m_AlwaysUpdate: 1
 --- !u!1 &8737254568603488655
 GameObject:
   m_ObjectHideFlags: 0

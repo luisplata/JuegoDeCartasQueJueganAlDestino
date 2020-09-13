@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class Evento : MonoBehaviour
 {
@@ -17,9 +18,9 @@ public class Evento : MonoBehaviour
         escenaMontada.GetComponent<Escenario>().PrimerActo();
     }
 
-    public void TerminarEscena()
+    public async Task TerminarEscena()
     {
-        escenaMontada.GetComponent<Escenario>().UltimoActo();
+        await escenaMontada.GetComponent<Escenario>().UltimoActo();
     }
 
     public bool FinalizoElUltimoActo => escenaMontada.GetComponent<Escenario>().FinalizoLaAnimacion;
@@ -30,6 +31,7 @@ public class Evento : MonoBehaviour
         if (esElEventoFinal && esElTutorial)
         {
             SceneManager.LoadScene("Game");
+            return null;
         }
         if (eventosSiguientes.Count <= 0)
         {

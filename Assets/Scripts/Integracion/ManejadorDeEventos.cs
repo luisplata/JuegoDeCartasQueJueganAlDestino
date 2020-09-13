@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Excepciones;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,8 @@ public class ManejadorDeEventos : MonoBehaviour
         referencia = new GameObject();
     }
 
-    public void SiguienteEscena(Carta carta)
+
+    public async void SiguienteEscena(Carta carta)
     {
         //comprobar primero miramos si tenemos escena cargada
         if (eventoActual == null)
@@ -26,8 +28,15 @@ public class ManejadorDeEventos : MonoBehaviour
         }
         else
         {
+            Debug.Log("Terminar escena ");
+            await eventoActual.TerminarEscena();
+            Debug.Log("Terminó la escena");
             eventoReferencia = eventoActual.SiguienteEvento(carta);
-            eventoActual.TerminarEscena();
+            if(eventoReferencia == null)
+            {
+                return;
+                throw new SiguienteEventoNotFoundException("No hay mas eventos");
+            }
             //destruimos el game object
             Destroy(eventoActual.gameObject);
             //construimos el siguiente escenario

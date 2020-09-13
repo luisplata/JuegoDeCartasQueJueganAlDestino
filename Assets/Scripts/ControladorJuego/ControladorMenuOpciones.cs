@@ -26,7 +26,7 @@ public class ControladorMenuOpciones : MonoBehaviour
             CogerBrillo();
         });
 
-
+        //Guardamos los values del jugador en la opacidad
         if (PlayerPrefs.HasKey("opacidad"))
         {
             Color opacidad = imagenBrillo.color;
@@ -37,6 +37,7 @@ public class ControladorMenuOpciones : MonoBehaviour
             brilloEscena.value = opacidad.a;
 
         }
+
         CogerBrillo();
     }
 

@@ -12,7 +12,7 @@ public class CartasEnLaMano : MonoBehaviour
     public List<GameObject> referenciasDeCartas;
     [SerializeField] private ClicksDeLaCarta click;
     [SerializeField] private bool TodasLascartasEnlaMano = false;
-    [SerializeField] private int cantidadDeCartasMaxima;
+    [SerializeField] public int cantidadDeCartasMaxima;
 
     public void TomarCartas()
     {

@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cartas:
-  - {fileID: 8613890973403795317, guid: d0c940ba2c8495047bfd69f6c51febae, type: 3}
-  - {fileID: 3582094139168973562, guid: dd744c5aa286eac4b846e79734242b7c, type: 3}
-  - {fileID: 4142682803727885000, guid: 16d5ad11d8591334ca1b864ac876f402, type: 3}
-  - {fileID: 4366521718719376319, guid: 1c43da6c9a6986d498233ab6eca9538b, type: 3}
-  - {fileID: 5387619973751997425, guid: d3404cd3e433bd74bb7c161b9be74469, type: 3}
-  - {fileID: 1702760990780042083, guid: afa8fd5f4b07f644cae754c477f56846, type: 3}
+  - {fileID: 7405475393013204010, guid: 12eb2026da6322c478a2fef60805443a, type: 3}
+  - {fileID: 5904654508748377882, guid: 92742fd8b98f54a409b4d1feacd4be4d, type: 3}
+  - {fileID: 3908509148222199782, guid: ebb0d28ad341d0544a187ef0ea7c969d, type: 3}
+  - {fileID: 8575426439363348939, guid: f82c18bb7279a2f48ad25646af50125c, type: 3}
+  - {fileID: 5419987612408303223, guid: c9ab0849253a07f479232e2078e641ff, type: 3}
+  - {fileID: 2686133615698853191, guid: eac64e89877cfeb43b7ccfb00277dec2, type: 3}

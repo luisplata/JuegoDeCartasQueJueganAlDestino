@@ -33,7 +33,18 @@ public class Escenario : MonoBehaviour
     private void Update()
     {
         FinalizoLaAnimacion = (playableDirector.duration - playableDirector.time) < 0.01f;
+        //vamos a verificar si tenemos que mostrar si o no el desafio, justo despues de la animacion de entrada
+        if (FinalizoLaAnimacion && volverAmirar)
+        {
+            MostramosElDesafioAlJugador();
+        }
     }
 
+    private void MostramosElDesafioAlJugador()
+    {
+
+        volverAmirar = false;
+    }
+    private bool volverAmirar = true;
     public bool FinalizoLaAnimacion { get; private set; }
 }

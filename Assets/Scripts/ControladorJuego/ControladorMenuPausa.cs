@@ -66,6 +66,7 @@ public class ControladorMenuPausa : MonoBehaviour
     }
     public void VolverAlMenuPrincipal()
     {
+        quitarPausaAlJuego();
         SceneManager.LoadScene("MenuPrincipal");
     }
     public void ControladorVolumen()

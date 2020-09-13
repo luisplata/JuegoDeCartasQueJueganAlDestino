@@ -28,9 +28,7 @@ public class ManejadorDeEventos : MonoBehaviour
         }
         else
         {
-            Debug.Log("Terminar escena ");
             await eventoActual.TerminarEscena();
-            Debug.Log("Terminó la escena");
             eventoReferencia = eventoActual.SiguienteEvento(carta);
             if(eventoReferencia == null)
             {

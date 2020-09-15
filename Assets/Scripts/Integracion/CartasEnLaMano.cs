@@ -13,6 +13,7 @@ public class CartasEnLaMano : MonoBehaviour
     [SerializeField] private ClicksDeLaCarta click;
     [SerializeField] private bool TodasLascartasEnlaMano = false;
     [SerializeField] public int cantidadDeCartasMaxima;
+    
 
     public void TomarCartas()
     {
@@ -21,6 +22,7 @@ public class CartasEnLaMano : MonoBehaviour
         if (sePuedeTomarMasCartas)
         {
             Carta carta = baraja.TomarCarta();
+            carta.click = click;
             cartasDeLaMano.Add(carta);
             MostrarMano();
         }

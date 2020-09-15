@@ -7,13 +7,14 @@ using System.Collections.Generic;
 
 public class MostrarTexto : MonoBehaviour
 {
-    [SerializeField] private Text textoTutorial;
-    [SerializeField] private Image panelFondoTutorial;
+    [SerializeField] public Text textoTutorial;
+    [SerializeField] public Image panelFondoTutorial;
     [SerializeField] private List<string> dialogos;
     [SerializeField] private string dialogoDeLaCartaDeLaMana;
     int numeroDeTextos = 1;
     [SerializeField] private CartasEnLaMano cartasEnLaMano;
     [SerializeField] bool textoAparecido = false;
+    [SerializeField] public SpriteRenderer barajaImage;
 
     // Start is called before the first frame update
     void Start()
@@ -38,8 +39,14 @@ public class MostrarTexto : MonoBehaviour
                 textoTutorial.text = texto;
                 await TiempoEntreTextoYTexto();
             }
+            AparecerElMazo();
             textoAparecido = true;
         }
+    }
+
+    private void AparecerElMazo()
+    {
+        barajaImage.enabled = true;
     }
 
     public void ValorarCartaEnLaMano()

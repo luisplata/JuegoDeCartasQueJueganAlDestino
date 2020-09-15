@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597614967840480836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -22.606781, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 4972435079830844015}
   m_RootOrder: 3
@@ -127,8 +127,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2648322428026744193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -22.606781, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 4972435079830844015}
   m_RootOrder: 1
@@ -228,8 +228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3260216505273784012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -22.606781, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 4972435079830844015}
   m_RootOrder: 2
@@ -329,8 +329,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3547854513764669391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -22.606781, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 4972435079830844015}
   m_RootOrder: 4
@@ -430,8 +430,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7014688052816231768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -22.606781, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 4972435079830844015}
   m_RootOrder: 0
@@ -534,7 +534,7 @@ Transform:
   m_GameObject: {fileID: 7810138286962966591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 22.606781, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children:
   - {fileID: 1735136488262339523}
   - {fileID: 4364078433105720152}
@@ -574,17 +574,29 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 1674634467244034997, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 3710610659511702660}
-  - key: {fileID: 1614973807785513102, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 7150402485413525146}
-  - key: {fileID: -5969134681503328291, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 5530388161969272583}
-  - key: {fileID: -3241267708594737500, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 242700252116155769}
-  - key: {fileID: -5858310548173244716, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 6594782109688687716}
-  - key: {fileID: 6920971007801068868, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  - key: {fileID: 0}
+    value: {fileID: 3706126412422982110}
+  - key: {fileID: -3346475475959398611, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+    value: {fileID: 3710610659511702660}
+  - key: {fileID: 2884834794454221615, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+    value: {fileID: 7150402485413525146}
+  - key: {fileID: -7416923795939512618, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+    value: {fileID: 5530388161969272583}
+  - key: {fileID: 8118493761962693570, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+    value: {fileID: 242700252116155769}
+  - key: {fileID: -8905143979217463254, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+    value: {fileID: 6594782109688687716}
+  - key: {fileID: 7226405035176944757, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
     value: {fileID: 3706126412422982110}
   m_ExposedReferences:
     m_References: []
@@ -619,6 +631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6bd91c33f94ea041be81a7405e6cf78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayableEsntrada: {fileID: 11400000, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
-  PlayableSalida: {fileID: 11400000, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  PlayableEsntrada: {fileID: 0}
+  PlayableSalida: {fileID: 0}
   playableDirector: {fileID: 3359559602238997342}

@@ -139,6 +139,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2417062036822606431, guid: 7d8a59dfc4c074a4d83dc8798bafda24,
         type: 3}
+    - target: {fileID: 6135297233184739397, guid: f000d8a92f02ba2489730314d3c5c309,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6135297233184739398, guid: f000d8a92f02ba2489730314d3c5c309,
         type: 3}
       propertyPath: m_Name
@@ -221,6 +226,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoTutorial: {fileID: 1931180064}
   panelFondoTutorial: {fileID: 1317584846}
+  dialogos:
+  - "Vaya... Te encuentras dentro de una habitaci\xF3n desconocida, \xBFc\xF3mo vas
+    a salir de ah\xED?. \xA1PUF! Acaba de aparecer un mazo m\xE1gico, \xBFque har\xE1s
+    con \xE9l?"
+  - "Para poder salir de la habitaci\xF3n deber\xE1s darle click a tu mazo m\xE1gico
+    para obtener una carta y as\xED poder salir de esta habitaci\xF3n del infierno."
+  dialogoDeLaCartaDeLaMana: "Perfecto ya tienes la carta en la mano, Ahora deber\xEDas
+    utilizarla para poder abrir esa puerta que tienes enfrente."
+  cartasEnLaMano: {fileID: 1605441509}
   textoAparecido: 0
 --- !u!1 &820986087
 GameObject:

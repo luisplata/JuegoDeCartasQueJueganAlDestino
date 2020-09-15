@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783842517604144552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.31527, y: 18.634895, z: 27.345493}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3813626613093085480}
   m_RootOrder: 0
@@ -127,8 +127,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2257593065747168343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.31527, y: 18.634895, z: 27.345493}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3813626613093085480}
   m_RootOrder: 4
@@ -228,8 +228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2472371019183324703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.31527, y: 18.634895, z: 27.345493}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3813626613093085480}
   m_RootOrder: 1
@@ -329,8 +329,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3815674655443968066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.31527, y: 18.634895, z: 27.345493}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3813626613093085480}
   m_RootOrder: 3
@@ -430,8 +430,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6670692128115119661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.31527, y: 18.634895, z: 27.345493}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3813626613093085480}
   m_RootOrder: 2
@@ -533,7 +533,7 @@ Transform:
   m_GameObject: {fileID: 7882484114211896145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 40.31527, y: -18.634895, z: -27.345493}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children:
   - {fileID: 2921313162090328504}
   - {fileID: 6805284152704816166}
@@ -558,17 +558,29 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 5520986151903996147, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1368921134928722690}
-  - key: {fileID: 7839359872860177982, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 7588869619962377429}
-  - key: {fileID: 1924708676184753135, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1252879288111319293}
-  - key: {fileID: 5084434127872326277, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 458378167424485459}
-  - key: {fileID: 740627683672981578, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 816499504587320293}
-  - key: {fileID: -6769607627998368634, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+  - key: {fileID: 0}
+    value: {fileID: 1140077981712995269}
+  - key: {fileID: 1951936239810576372, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+    value: {fileID: 1368921134928722690}
+  - key: {fileID: 5648621377910161192, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+    value: {fileID: 7588869619962377429}
+  - key: {fileID: 7895564505933672965, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+    value: {fileID: 1252879288111319293}
+  - key: {fileID: -5862268408177024462, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+    value: {fileID: 458378167424485459}
+  - key: {fileID: -7449788652555785968, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
+    value: {fileID: 816499504587320293}
+  - key: {fileID: 8869677856620347433, guid: b2d60f9418dc8f746a56a778edc6848c, type: 2}
     value: {fileID: 1140077981712995269}
   m_ExposedReferences:
     m_References: []

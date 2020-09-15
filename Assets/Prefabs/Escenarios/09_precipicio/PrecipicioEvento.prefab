@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786690140825407993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.563745, y: 66.17021, z: -126.5625}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 0
-  eventosSiguientes: []
+  eventosSiguientes:
+  - {fileID: 1581254631608268161, guid: 49ec32841de65be4d95a9c975452718f, type: 3}
   esElEventoFinal: 0
   esElTutorial: 0
-  escenaMontada: {fileID: 0}
+  escenaMontada: {fileID: 1919865502963672058, guid: 37a9e857418dbf14288f6c9e3ecd939b,
+    type: 3}

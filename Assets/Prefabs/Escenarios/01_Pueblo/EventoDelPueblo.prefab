@@ -45,7 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipo: 1
   eventosSiguientes:
-  - {fileID: 5130223095069061198, guid: 50e76a0e74e349d49889c612a21dfac3, type: 3}
+  - {fileID: 413406681691681380, guid: 7fe485018f414d64199ffbd4db81906c, type: 3}
+  - {fileID: 2387274129840025378, guid: 9bdc18a7f96807940ace8eae6a2d47e8, type: 3}
+  - {fileID: 5283704811501273114, guid: 0e14ff78383ec6646822295d5ea8038c, type: 3}
   esElEventoFinal: 0
+  esElTutorial: 0
   escenaMontada: {fileID: 8168769337670778150, guid: f4bb36e2cb9c34b49abb90fc92325042,
     type: 3}

@@ -139,11 +139,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2417062036822606431, guid: 7d8a59dfc4c074a4d83dc8798bafda24,
         type: 3}
-    - target: {fileID: 6135297233184739397, guid: f000d8a92f02ba2489730314d3c5c309,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6135297233184739398, guid: f000d8a92f02ba2489730314d3c5c309,
         type: 3}
       propertyPath: m_Name
@@ -237,107 +232,24 @@ MonoBehaviour:
   cartasEnLaMano: {fileID: 644810424}
   textoAparecido: 0
   barajaImage: {fileID: 644810423}
---- !u!1 &644810421 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8460438947454045410, guid: 06c2dcb7e4f142e41a345cd1567937f4,
+--- !u!212 &644810423 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 644810423, guid: 06c2dcb7e4f142e41a345cd1567937f4,
     type: 3}
   m_PrefabInstance: {fileID: 1267056971}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &644810422
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644810421}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.4133334, y: 3.4133334}
-    newSize: {x: 3.4133334, y: 3.4133334}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 3}
-  m_EdgeRadius: 0
---- !u!212 &644810423
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644810421}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f78ddde00c6d1164c93a25d8748d1bb4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.4133334, y: 3.4133334}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &644810424
+--- !u!114 &644810424 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1267056971}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644810421}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aacb14c170a70ca4c98c3e93c791f9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartasDeLaMano: []
-  baraja: {fileID: 1267056972}
-  referenciaDePosicionDeCarta: {fileID: 879273673}
-  referenciasDeCartas: []
-  click: {fileID: 842670818}
-  TodasLascartasEnlaMano: 0
-  cantidadDeCartasMaxima: 1
 --- !u!1 &820986087
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,15 +503,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 644810423, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: referenciaDePosicionDeCarta
+      value: 
+      objectReference: {fileID: 879273673}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: click
+      value: 
+      objectReference: {fileID: 842670818}
     - target: {fileID: 8460438947454045408, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.4
+      value: -6.97
       objectReference: {fileID: 0}
     - target: {fileID: 8460438947454045408, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 8460438947454045408, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
@@ -646,17 +570,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
-        type: 3}
-      propertyPath: cartas.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
-        type: 3}
-      propertyPath: cartas.Array.data[0]
-      value: 
-      objectReference: {fileID: 2633124270729356942, guid: deceb138c2af18341803b4f0d46dd74a,
-        type: 3}
     - target: {fileID: 8460438947454045410, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: m_Name
@@ -664,18 +577,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
---- !u!114 &1267056972 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1267056971}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644810421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e930bd049f25a4bbdaa115143d46e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1317584844
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,17 +663,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaManoCartasEnLaMano
       objectReference: {fileID: 0}
-    - target: {fileID: 3754658062795059444, guid: db28549664dd49242a781f25051fb49e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3754658062795059444, guid: db28549664dd49242a781f25051fb49e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f78ddde00c6d1164c93a25d8748d1bb4,
-        type: 3}
     - target: {fileID: 3754658062795059445, guid: db28549664dd49242a781f25051fb49e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -828,25 +718,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3754658062795059447, guid: db28549664dd49242a781f25051fb49e,
-        type: 3}
-      propertyPath: baraja
-      value: 
-      objectReference: {fileID: 1267056972}
-    - target: {fileID: 3754658062795059447, guid: db28549664dd49242a781f25051fb49e,
-        type: 3}
-      propertyPath: cantidadDeCartasMaxima
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3754658062795059447, guid: db28549664dd49242a781f25051fb49e,
-        type: 3}
-      propertyPath: click
-      value: 
-      objectReference: {fileID: 842670818}
-    m_RemovedComponents:
-    - {fileID: 3754658062795059447, guid: db28549664dd49242a781f25051fb49e, type: 3}
-    - {fileID: 3754658062795059446, guid: db28549664dd49242a781f25051fb49e, type: 3}
-    - {fileID: 3754658062795059444, guid: db28549664dd49242a781f25051fb49e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db28549664dd49242a781f25051fb49e, type: 3}
 --- !u!114 &1441857274 stripped
 MonoBehaviour:

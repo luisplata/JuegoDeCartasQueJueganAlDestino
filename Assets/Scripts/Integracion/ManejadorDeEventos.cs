@@ -12,6 +12,14 @@ public class ManejadorDeEventos : MonoBehaviour
     private void Awake()
     {
         referencia = new GameObject();
+        if (eventoActual == null)
+        {
+            eventoActual = listaDeEventos[0];
+            //instanciamos
+            eventoActual = Instantiate(eventoActual, referencia.transform);
+            //mostramos la escena
+            eventoActual.ComenzarEscena();
+        }
     }
 
 
@@ -28,9 +36,6 @@ public class ManejadorDeEventos : MonoBehaviour
         }
         else
         {
-            gameObject.GetComponent<MostrarTexto>().barajaImage.enabled = false;
-            gameObject.GetComponent<MostrarTexto>().textoTutorial.gameObject.SetActive(false);
-            gameObject.GetComponent<MostrarTexto>().panelFondoTutorial.gameObject.SetActive(false);
             await eventoActual.TerminarEscena();
             eventoReferencia = eventoActual.SiguienteEvento(carta);
             if(eventoReferencia == null)

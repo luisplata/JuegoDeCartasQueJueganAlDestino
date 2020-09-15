@@ -20,6 +20,13 @@ public class Evento : MonoBehaviour
 
     public async Task TerminarEscena()
     {
+        //si es el evento final y estamos en el tutorial nos vamos a la siguiente escena
+        if (esElEventoFinal && esElTutorial)
+        {
+            GameObject.Find("ManejadorDeEventos").GetComponent<MostrarTexto>().barajaImage.enabled = false;
+            GameObject.Find("ManejadorDeEventos").GetComponent<MostrarTexto>().textoTutorial.gameObject.SetActive(false);
+            GameObject.Find("ManejadorDeEventos").GetComponent<MostrarTexto>().panelFondoTutorial.gameObject.SetActive(false);
+        }
         await escenaMontada.GetComponent<Escenario>().UltimoActo();
     }
 

@@ -11,12 +11,15 @@ public class Evento : MonoBehaviour
     [SerializeField] private List<Evento> eventosSiguientes;
     [SerializeField] private bool esElEventoFinal, esElTutorial;
     [SerializeField] private GameObject escenaMontada;
+    [SerializeField] private AudioClip sonidoDeEvento;
     public void ComenzarEscena()
     {
         escenaMontada = Instantiate(escenaMontada, transform);
         escenaMontada.SetActive(true);
         escenaMontada.GetComponent<Escenario>().PrimerActo();
     }
+
+    public AudioClip Sonido => sonidoDeEvento;
 
     public async Task TerminarEscena()
     {

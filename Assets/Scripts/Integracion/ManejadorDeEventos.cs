@@ -6,6 +6,7 @@ using UnityEngine;
 public class ManejadorDeEventos : MonoBehaviour
 {
     [SerializeField] private List<Evento> listaDeEventos;
+    [SerializeField] private AudioSource source;
     private Evento eventoActual;
     private Evento eventoReferencia;
     private GameObject referencia;
@@ -19,6 +20,9 @@ public class ManejadorDeEventos : MonoBehaviour
             eventoActual = Instantiate(eventoActual, referencia.transform);
             //mostramos la escena
             eventoActual.ComenzarEscena();
+            source.clip = eventoActual.Sonido;
+            source.loop = true;
+            source.Play();
         }
     }
 
@@ -33,6 +37,9 @@ public class ManejadorDeEventos : MonoBehaviour
             eventoActual = Instantiate(eventoActual, referencia.transform);
             //mostramos la escena
             eventoActual.ComenzarEscena();
+            source.clip = eventoActual.Sonido;
+            source.loop = true;
+            source.Play();
         }
         else
         {
@@ -49,6 +56,9 @@ public class ManejadorDeEventos : MonoBehaviour
             eventoActual = Instantiate(eventoReferencia, referencia.transform);
             //mostramos la escena
             eventoActual.ComenzarEscena();
+            source.clip = eventoActual.Sonido;
+            source.loop = true;
+            source.Play();
         }
     }
 

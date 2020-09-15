@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6112596610208077894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7598489551563468753}
   m_Father: {fileID: 0}
@@ -56,6 +56,10 @@ PlayableDirector:
   - key: {fileID: 4921133549279812127, guid: 14cec98ecabdffa4e9bbdfbc3604043c, type: 2}
     value: {fileID: 4805483073015551840}
   - key: {fileID: 5659588213687960885, guid: 14cec98ecabdffa4e9bbdfbc3604043c, type: 2}
+    value: {fileID: 4944902539086362189}
+  - key: {fileID: -3843651493605828222, guid: 3a7cbf461d3b4f74da9d82ff3ef87a53, type: 2}
+    value: {fileID: 4805483073015551840}
+  - key: {fileID: 4440829830282474222, guid: 3a7cbf461d3b4f74da9d82ff3ef87a53, type: 2}
     value: {fileID: 4944902539086362189}
   m_ExposedReferences:
     m_References: []
@@ -91,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayableEsntrada: {fileID: 11400000, guid: 14cec98ecabdffa4e9bbdfbc3604043c, type: 2}
-  PlayableSalida: {fileID: 11400000, guid: 14cec98ecabdffa4e9bbdfbc3604043c, type: 2}
+  PlayableSalida: {fileID: 11400000, guid: 3a7cbf461d3b4f74da9d82ff3ef87a53, type: 2}
   playableDirector: {fileID: 8436838732533362028}
 --- !u!1 &6291742503692716645
 GameObject:

@@ -331,7 +331,7 @@ Transform:
   m_GameObject: {fileID: 2930922960568227058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2930922959075127680}
   - {fileID: 2930922960845297961}
@@ -350,7 +350,7 @@ PlayableDirector:
   m_GameObject: {fileID: 2930922960568227058}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 6a3b16eab3dd02c4e8312198d4e05ae2, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -379,6 +379,18 @@ PlayableDirector:
   - key: {fileID: 71894061714339580, guid: 6a3b16eab3dd02c4e8312198d4e05ae2, type: 2}
     value: {fileID: 2930922960141981845}
   - key: {fileID: -8166852730575415744, guid: 6a3b16eab3dd02c4e8312198d4e05ae2, type: 2}
+    value: {fileID: 2930922959032489431}
+  - key: {fileID: 907041366096979226, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
+    value: {fileID: 2930922960568227057}
+  - key: {fileID: -3566687569275991454, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
+    value: {fileID: 2930922959075127682}
+  - key: {fileID: 6405502720369049424, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
+    value: {fileID: 2930922960845297963}
+  - key: {fileID: -5937282901951610723, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
+    value: {fileID: 2930922960663224722}
+  - key: {fileID: 6265522632296002097, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
+    value: {fileID: 2930922960141981845}
+  - key: {fileID: 2576360843086162145, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
     value: {fileID: 2930922959032489431}
   m_ExposedReferences:
     m_References: []
@@ -414,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayableEsntrada: {fileID: 11400000, guid: 6a3b16eab3dd02c4e8312198d4e05ae2, type: 2}
-  PlayableSalida: {fileID: 11400000, guid: 6a3b16eab3dd02c4e8312198d4e05ae2, type: 2}
+  PlayableSalida: {fileID: 11400000, guid: f70a342801ea6f14aa96525b6e732a3e, type: 2}
   playableDirector: {fileID: 2930922960568227056}
 --- !u!1 &2930922960663224723
 GameObject:

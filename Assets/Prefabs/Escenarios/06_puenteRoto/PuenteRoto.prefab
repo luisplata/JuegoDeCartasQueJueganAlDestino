@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 181716173132517079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8934740241879353491}
   - {fileID: 3651276003520799351}
@@ -46,7 +46,7 @@ PlayableDirector:
   m_GameObject: {fileID: 181716173132517079}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 13b30e5d914b1ea4e93c4a1f9c71db76, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -71,6 +71,16 @@ PlayableDirector:
   - key: {fileID: -515509474749930768, guid: 13b30e5d914b1ea4e93c4a1f9c71db76, type: 2}
     value: {fileID: 7895753725203939596}
   - key: {fileID: -8045473805969414968, guid: 13b30e5d914b1ea4e93c4a1f9c71db76, type: 2}
+    value: {fileID: 7035139736045799363}
+  - key: {fileID: -5545142520692948631, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
+    value: {fileID: 5872294779807594619}
+  - key: {fileID: -2774537366551261847, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
+    value: {fileID: 3618124746519355468}
+  - key: {fileID: 5595800386814569457, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
+    value: {fileID: 7138561786219905616}
+  - key: {fileID: 4525523420056882151, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
+    value: {fileID: 7895753725203939596}
+  - key: {fileID: 5920948676259578455, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
     value: {fileID: 7035139736045799363}
   m_ExposedReferences:
     m_References: []
@@ -106,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayableEsntrada: {fileID: 11400000, guid: 13b30e5d914b1ea4e93c4a1f9c71db76, type: 2}
-  PlayableSalida: {fileID: 11400000, guid: 13b30e5d914b1ea4e93c4a1f9c71db76, type: 2}
+  PlayableSalida: {fileID: 11400000, guid: 20e73dbf1d8a6044183ece0fafbc9e25, type: 2}
   playableDirector: {fileID: 6893138616447259480}
 --- !u!1 &413352109604904822
 GameObject:

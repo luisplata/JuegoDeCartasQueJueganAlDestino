@@ -13,8 +13,8 @@ public class ControladorMenuPausa : MonoBehaviour
 
     ControladorMenuOpciones controladorMenuOpciones;
 
-    public AudioSource audioSource;
-    public Slider sliderVolumen;
+    public AudioSource audio;
+    public Slider slider;
 
 
     private void Start()
@@ -22,10 +22,23 @@ public class ControladorMenuPausa : MonoBehaviour
         controladorMenuOpciones = GetComponent<ControladorMenuOpciones>();
         controladorMenuOpciones.menuOpcionesActivo = true;
 
-        sliderVolumen.value = 1f;
-        audioSource = GetComponent<AudioSource>();
+        if (PlayerPrefs.HasKey("volumenGeneral"))
+        {
+            slider.value = PlayerPrefs.GetFloat("volumenGeneral");
+        }
+        else
+        {
+            slider.value = 1;
+        }
+        audio.volume = slider.value;
+
 
     }
+    private void Awake()
+    {
+        slider.onValueChanged.AddListener(delegate { CambioDeVolumenGeneral(); });
+    }
+
     // Start is called before the first frame update
     void Update()
     {
@@ -69,8 +82,9 @@ public class ControladorMenuPausa : MonoBehaviour
         quitarPausaAlJuego();
         SceneManager.LoadScene("MenuPrincipal");
     }
-    public void ControladorVolumen()
+    public void CambioDeVolumenGeneral()
     {
-        audioSource.volume = sliderVolumen.value;
+        audio.volume = slider.value;
+        PlayerPrefs.SetFloat("volumenGeneral", slider.value);
     }
 }

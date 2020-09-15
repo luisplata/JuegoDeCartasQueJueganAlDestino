@@ -53,7 +53,6 @@ public class MostrarTexto : MonoBehaviour
     {
         if (cartasEnLaMano.cartasDeLaMano.Count == 1)
         {
-            Debug.Log("EVALUO EL CLICKKKKKKKKKK DE TENER LA CARTA");
             textoTutorial.text = dialogoDeLaCartaDeLaMana;
         }
     }

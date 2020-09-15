@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1305556949436340467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2811195380491215108}
   - {fileID: 8759265773362007953}
@@ -47,7 +47,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1305556949436340467}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 1270b178308961c479f40aae6dfa120d, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -76,6 +76,22 @@ PlayableDirector:
   - key: {fileID: 1615203417289509567, guid: 1270b178308961c479f40aae6dfa120d, type: 2}
     value: {fileID: 2623048805598615604}
   - key: {fileID: 7992044727347959888, guid: 1270b178308961c479f40aae6dfa120d, type: 2}
+    value: {fileID: 7893103657863323939}
+  - key: {fileID: -557523974926234382, guid: 3ce1fd892f53fb14e9c0e889050f88a7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6812766606701310500, guid: 3ce1fd892f53fb14e9c0e889050f88a7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2262585568071868614, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
+    value: {fileID: 291972828885597564}
+  - key: {fileID: 7683937309198521080, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
+    value: {fileID: 7955598163812108136}
+  - key: {fileID: 2086138014044775415, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
+    value: {fileID: 8065711213202204086}
+  - key: {fileID: -8589038732884131005, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
+    value: {fileID: 2653205447780884691}
+  - key: {fileID: -9086280941806521466, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
+    value: {fileID: 2623048805598615604}
+  - key: {fileID: -1585962227042776029, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
     value: {fileID: 7893103657863323939}
   m_ExposedReferences:
     m_References: []
@@ -111,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayableEsntrada: {fileID: 11400000, guid: 1270b178308961c479f40aae6dfa120d, type: 2}
-  PlayableSalida: {fileID: 11400000, guid: 1270b178308961c479f40aae6dfa120d, type: 2}
+  PlayableSalida: {fileID: 11400000, guid: b18bd7ba0191b3f41b85d6d6ebc2708a, type: 2}
   playableDirector: {fileID: 3133154422688011076}
 --- !u!1 &3190413562213640273
 GameObject:

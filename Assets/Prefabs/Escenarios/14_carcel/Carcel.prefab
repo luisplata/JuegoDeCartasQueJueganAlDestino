@@ -517,7 +517,6 @@ GameObject:
   - component: {fileID: 6912779431183178110}
   - component: {fileID: 3359559602238997342}
   - component: {fileID: 3710610659511702660}
-  - component: {fileID: 3474201239848696947}
   m_Layer: 0
   m_Name: Carcel
   m_TagString: Untagged
@@ -534,7 +533,7 @@ Transform:
   m_GameObject: {fileID: 7810138286962966591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 22.606781, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1735136488262339523}
   - {fileID: 4364078433105720152}
@@ -557,7 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayableEsntrada: {fileID: 11400000, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
-  PlayableSalida: {fileID: 11400000, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  PlayableSalida: {fileID: 11400000, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
   playableDirector: {fileID: 3359559602238997342}
 --- !u!320 &3359559602238997342
 PlayableDirector:
@@ -568,7 +567,7 @@ PlayableDirector:
   m_GameObject: {fileID: 7810138286962966591}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -598,6 +597,18 @@ PlayableDirector:
     value: {fileID: 6594782109688687716}
   - key: {fileID: 7226405035176944757, guid: 9e5a92fcf5e18f3449281b738a93385f, type: 2}
     value: {fileID: 3706126412422982110}
+  - key: {fileID: 5281887021676829513, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
+    value: {fileID: 3710610659511702660}
+  - key: {fileID: 4284032325676183482, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
+    value: {fileID: 7150402485413525146}
+  - key: {fileID: 4413417403989023124, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
+    value: {fileID: 5530388161969272583}
+  - key: {fileID: 5902820126254174297, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
+    value: {fileID: 242700252116155769}
+  - key: {fileID: 8427826075928508500, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
+    value: {fileID: 6594782109688687716}
+  - key: {fileID: 8732136551900256539, guid: 00fde43a39fee154cb4b3775e22b838a, type: 2}
+    value: {fileID: 3706126412422982110}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &3710610659511702660
@@ -619,18 +630,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3474201239848696947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7810138286962966591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6bd91c33f94ea041be81a7405e6cf78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayableEsntrada: {fileID: 0}
-  PlayableSalida: {fileID: 0}
-  playableDirector: {fileID: 3359559602238997342}

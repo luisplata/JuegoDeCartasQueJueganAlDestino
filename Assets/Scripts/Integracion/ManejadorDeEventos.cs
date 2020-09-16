@@ -10,6 +10,7 @@ public class ManejadorDeEventos : MonoBehaviour
     public Evento eventoActual;
     private Evento eventoReferencia;
     private GameObject referencia;
+    [SerializeField] private CartasEnLaMano cartasDeLaMano;
     private void Awake()
     {
         referencia = new GameObject();
@@ -45,7 +46,9 @@ public class ManejadorDeEventos : MonoBehaviour
         {
             await eventoActual.TerminarEscena();
             eventoReferencia = eventoActual.SiguienteEvento(carta);
-            if(eventoReferencia == null)
+            //normalizamos la situación
+            cartasDeLaMano.MostramosMano();
+            if (eventoReferencia == null)
             {
                 return;
                 throw new SiguienteEventoNotFoundException("No hay mas eventos");

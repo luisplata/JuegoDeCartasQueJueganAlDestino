@@ -471,6 +471,11 @@ PrefabInstance:
       propertyPath: source
       value: 
       objectReference: {fileID: 1650297983}
+    - target: {fileID: 6135297233184739396, guid: f000d8a92f02ba2489730314d3c5c309,
+        type: 3}
+      propertyPath: cartasDeLaMano
+      value: 
+      objectReference: {fileID: 58056163}
     - target: {fileID: 6135297233184739397, guid: f000d8a92f02ba2489730314d3c5c309,
         type: 3}
       propertyPath: m_Enabled
@@ -545,38 +550,30 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8784173611837751407}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1369466352 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1112937995760198712, guid: 176076b457cad48448ce3e1288d07d37,
+--- !u!114 &1369466353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1369466353, guid: 176076b457cad48448ce3e1288d07d37,
     type: 3}
   m_PrefabInstance: {fileID: 1665271498}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1369466353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369466352}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2abb16d539c231c4baa9fd633cac86c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartasEnLaMano: {fileID: 58056163}
---- !u!114 &1369466354
+--- !u!114 &1369466354 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1369466354, guid: 176076b457cad48448ce3e1288d07d37,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665271498}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369466352}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 567428b2c7730da4f976733645741077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manejadorDeEventos: {fileID: 680754656}
 --- !u!1 &1374118937
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +995,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1369466353, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
+      propertyPath: cartasEnLaMano
+      value: 
+      objectReference: {fileID: 58056163}
+    - target: {fileID: 1369466354, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
+      propertyPath: manejadorDeEventos
+      value: 
+      objectReference: {fileID: 680754656}
     - target: {fileID: 1112937995760198712, guid: 176076b457cad48448ce3e1288d07d37,
         type: 3}
       propertyPath: m_Name
@@ -1058,18 +1063,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1112937995760198715, guid: 176076b457cad48448ce3e1288d07d37,
-        type: 3}
-      propertyPath: manejadorDeEventos
-      value: 
-      objectReference: {fileID: 680754656}
-    - target: {fileID: 1112937995760198715, guid: 176076b457cad48448ce3e1288d07d37,
-        type: 3}
-      propertyPath: cartasEnLaMano
-      value: 
-      objectReference: {fileID: 58056163}
-    m_RemovedComponents:
-    - {fileID: 1112937995760198715, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
 --- !u!114 &1744525135 stripped
 MonoBehaviour:

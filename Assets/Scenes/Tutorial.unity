@@ -144,6 +144,11 @@ PrefabInstance:
       propertyPath: source
       value: 
       objectReference: {fileID: 1612337545}
+    - target: {fileID: 6135297233184739396, guid: f000d8a92f02ba2489730314d3c5c309,
+        type: 3}
+      propertyPath: cartasDeLaMano
+      value: 
+      objectReference: {fileID: 644810424}
     - target: {fileID: 6135297233184739398, guid: f000d8a92f02ba2489730314d3c5c309,
         type: 3}
       propertyPath: m_Name
@@ -414,7 +419,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1267056971}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1267056972}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aacb14c170a70ca4c98c3e93c791f9a5, type: 3}
@@ -510,6 +515,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1369466353, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
+      propertyPath: cartasEnLaMano
+      value: 
+      objectReference: {fileID: 644810424}
+    - target: {fileID: 1369466354, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
+      propertyPath: manejadorDeEventos
+      value: 
+      objectReference: {fileID: 1441857274}
     - target: {fileID: 1112937995760198712, guid: 176076b457cad48448ce3e1288d07d37,
         type: 3}
       propertyPath: m_Name
@@ -584,14 +597,26 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
 --- !u!114 &842670818 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1112937995760198715, guid: 176076b457cad48448ce3e1288d07d37,
+  m_CorrespondingSourceObject: {fileID: 1369466354, guid: 176076b457cad48448ce3e1288d07d37,
     type: 3}
   m_PrefabInstance: {fileID: 842670817}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a22c1bcc0b3bf8346a1fc90f7c82f277, type: 3}
+  m_Script: {fileID: 11500000, guid: 567428b2c7730da4f976733645741077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &842670819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1369466353, guid: 176076b457cad48448ce3e1288d07d37,
+    type: 3}
+  m_PrefabInstance: {fileID: 842670817}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abb16d539c231c4baa9fd633cac86c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &879273673 stripped
@@ -924,7 +949,23 @@ PrefabInstance:
     - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
       propertyPath: click
       value: 
+      objectReference: {fileID: 842670819}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: referenciaDePosicionDeCartaEvento
+      value: 
+      objectReference: {fileID: 879273673}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: clickEvento
+      value: 
       objectReference: {fileID: 842670818}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: manejadorDeEventos
+      value: 
+      objectReference: {fileID: 1441857274}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: barajaDeEventos
+      value: 
+      objectReference: {fileID: 1267056973}
     - target: {fileID: 8460438947454045408, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -987,6 +1028,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+--- !u!1 &1267056972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8460438947454045410, guid: 06c2dcb7e4f142e41a345cd1567937f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1267056971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1267056973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267056972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636347c0de8c1864e979639a59831722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartas:
+  - {fileID: 6016558417104076177, guid: d0c940ba2c8495047bfd69f6c51febae, type: 3}
 --- !u!1 &1317584844
 GameObject:
   m_ObjectHideFlags: 0

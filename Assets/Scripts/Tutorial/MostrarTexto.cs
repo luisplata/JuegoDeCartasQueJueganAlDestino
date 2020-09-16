@@ -24,7 +24,6 @@ public class MostrarTexto : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(cartasEnLaMano.cartasDeLaMano.Count + " CARTAS EN LA MANO");
         ValorarCartaEnLaMano();
     }
     private async void autoTexto()

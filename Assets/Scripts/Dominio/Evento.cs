@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
+using TMPro;
 
 public class Evento : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class Evento : MonoBehaviour
 
     public bool FinalizoElUltimoActo => escenaMontada.GetComponent<Escenario>().FinalizoLaAnimacion;
 
-    public Evento SiguienteEvento(CartaGenerica carta)
+    public Evento SiguienteEvento(CartaDeEvento carta)
     {
         //si es el evento final y estamos en el tutorial nos vamos a la siguiente escena
         if (esElEventoFinal && esElTutorial)
@@ -51,7 +52,9 @@ public class Evento : MonoBehaviour
 
         foreach (Evento e in eventosSiguientes)
         {
-            if (e.tipo == carta.Tipo)
+            bool elEventoTieneElMismoNombreQueLaCarta = e.gameObject.name == carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text;
+            Debug.Log("evento " + e.gameObject.name + " texto carta " + carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text);
+            if (elEventoTieneElMismoNombreQueLaCarta)
             {
                 resultado = e;
                 break;

@@ -65,6 +65,11 @@ public class CartasEnLaMano : MonoBehaviour
         {
             c.gameObject.gameObject.SetActive(true);
         }
+        foreach (GameObject c in referenciaDeCartaEvento)
+        {
+            Destroy(c.gameObject);
+        }
+        referenciaDeCartaEvento = new List<GameObject>();
     }
 
     private void MostrarAlternativasDeCartasdeEvento(Carta cartaUtilizada)
@@ -74,13 +79,12 @@ public class CartasEnLaMano : MonoBehaviour
         {
             Destroy(c.gameObject);
         }
+        referenciaDeCartaEvento = new List<GameObject>();
 
         int incremento = 35;
         //Debemos tomar todas las cartas que podamos
         cartasDeEventoEnLaMano = new List<CartaDeEvento>();
 
-
-        referenciaDeCartaEvento = new List<GameObject>();
 
         bool esImpar = manejadorDeEventos.eventoActual.eventosSiguientes.Count % 2 != 0;
         foreach (Evento evento in manejadorDeEventos.eventoActual.eventosSiguientes)
@@ -126,39 +130,7 @@ public class CartasEnLaMano : MonoBehaviour
             {
                 esImpar = !esImpar;
             }
-
-
-            if (!esImpar)
-            {
-                if (positivo <= negativo)
-                {
-
-                }
-                else
-                {
-                }
-            }
-            else
-            {
-                esImpar = !esImpar;
-            }
         }
-
-        foreach (GameObject c in referenciaDeCartaEvento)
-        {
-            
-        }
-        incremento = 35;
-        positivo = 0;
-        negativo = 0;
-        esImpar = cartasDeEventoEnLaMano.Count % 2 != 0;
-        foreach (CartaDeEvento evento in cartasDeEventoEnLaMano)
-        {
-            Debug.Log(evento.gameObject.name);
-            //le damos rotacion
-            
-        }
-
     }
 
     int positivo = 0;

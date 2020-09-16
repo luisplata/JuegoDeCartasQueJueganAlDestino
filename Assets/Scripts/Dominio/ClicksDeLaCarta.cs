@@ -5,15 +5,13 @@ using TMPro;
 namespace Assets.Scripts.Integracion
 {
 
-    public class ClicksDeLaCarta : Click
+    public class ClicksDeLaCarta : MonoBehaviour
     {
         [SerializeField] private CartasEnLaMano cartasEnLaMano;
-        [SerializeField] private ManejadorDeEventos manejadorDeEventos;
-        public override void OnClick(Carta carta)
+        public void OnClick(Carta carta)
         {
-
-            manejadorDeEventos.SiguienteEscena(carta);
             cartasEnLaMano.UsarCarta(carta);
+            //manejadorDeEventos.SiguienteEscena(carta);//Este va para las cartas de evento
         }
     }
 }

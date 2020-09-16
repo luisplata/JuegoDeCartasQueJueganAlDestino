@@ -121,6 +121,40 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &58056162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8460438947454045410, guid: 06c2dcb7e4f142e41a345cd1567937f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2683136904801745128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &58056163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2683136904801745128}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58056162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacb14c170a70ca4c98c3e93c791f9a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &58056164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58056162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636347c0de8c1864e979639a59831722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartas:
+  - {fileID: 6016558417104076177, guid: d0c940ba2c8495047bfd69f6c51febae, type: 3}
+  - {fileID: -6434521604107890960, guid: dd744c5aa286eac4b846e79734242b7c, type: 3}
+  - {fileID: -3163058395702167948, guid: 16d5ad11d8591334ca1b864ac876f402, type: 3}
 --- !u!1 &583038914 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6135297233184739398, guid: f000d8a92f02ba2489730314d3c5c309,
@@ -271,7 +305,7 @@ PrefabInstance:
         type: 3}
       propertyPath: click
       value: 
-      objectReference: {fileID: 1724416017}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db28549664dd49242a781f25051fb49e, type: 3}
 --- !u!1 &888905434 stripped
@@ -511,6 +545,38 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8784173611837751407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1369466352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1112937995760198712, guid: 176076b457cad48448ce3e1288d07d37,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665271498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1369466353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369466352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abb16d539c231c4baa9fd633cac86c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartasEnLaMano: {fileID: 58056163}
+--- !u!114 &1369466354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369466352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567428b2c7730da4f976733645741077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manejadorDeEventos: {fileID: 680754656}
 --- !u!1 &1374118937
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,8 +942,8 @@ MonoBehaviour:
   estaPausado: 0
   menuDePausa: {fileID: 1103777473}
   menuDeOpciones: {fileID: 1271565228}
-  audio: {fileID: 0}
-  slider: {fileID: 0}
+  audio: {fileID: 1650297983}
+  slider: {fileID: 1443432369}
 --- !u!114 &1650297985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,28 +1067,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cartasEnLaMano
       value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 58056163}
+    m_RemovedComponents:
+    - {fileID: 1112937995760198715, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 176076b457cad48448ce3e1288d07d37, type: 3}
---- !u!114 &1724416017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1112937995760198715, guid: 176076b457cad48448ce3e1288d07d37,
-    type: 3}
-  m_PrefabInstance: {fileID: 1665271498}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a22c1bcc0b3bf8346a1fc90f7c82f277, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1744525135 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
     type: 3}
   m_PrefabInstance: {fileID: 2683136904801745128}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 58056162}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e930bd049f25a4bbdaa115143d46e3, type: 3}
@@ -1141,11 +1196,27 @@ PrefabInstance:
     - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
       propertyPath: click
       value: 
-      objectReference: {fileID: 1724416017}
+      objectReference: {fileID: 1369466353}
     - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
       propertyPath: cantidadDeCartasMaxima
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: referenciaDePosicionDeCartaEvento
+      value: 
+      objectReference: {fileID: 888905434}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: barajaDeEventos
+      value: 
+      objectReference: {fileID: 58056164}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: clickEvento
+      value: 
+      objectReference: {fileID: 1369466354}
+    - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
+      propertyPath: manejadorDeEventos
+      value: 
+      objectReference: {fileID: 680754656}
     - target: {fileID: 8460438947454045408, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1204,7 +1275,7 @@ PrefabInstance:
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.size
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
@@ -1216,49 +1287,49 @@ PrefabInstance:
         type: 3}
       propertyPath: cartas.Array.data[2]
       value: 
-      objectReference: {fileID: 8613890973403795317, guid: d0c940ba2c8495047bfd69f6c51febae,
+      objectReference: {fileID: 5904654508748377882, guid: 92742fd8b98f54a409b4d1feacd4be4d,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[3]
       value: 
-      objectReference: {fileID: 3582094139168973562, guid: dd744c5aa286eac4b846e79734242b7c,
+      objectReference: {fileID: 3908509148222199782, guid: ebb0d28ad341d0544a187ef0ea7c969d,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[4]
       value: 
-      objectReference: {fileID: 4142682803727885000, guid: 16d5ad11d8591334ca1b864ac876f402,
+      objectReference: {fileID: 8575426439363348939, guid: f82c18bb7279a2f48ad25646af50125c,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[5]
       value: 
-      objectReference: {fileID: 5904654508748377882, guid: 92742fd8b98f54a409b4d1feacd4be4d,
+      objectReference: {fileID: 5419987612408303223, guid: c9ab0849253a07f479232e2078e641ff,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[6]
       value: 
-      objectReference: {fileID: 3908509148222199782, guid: ebb0d28ad341d0544a187ef0ea7c969d,
+      objectReference: {fileID: 2633124270729356942, guid: deceb138c2af18341803b4f0d46dd74a,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[7]
       value: 
-      objectReference: {fileID: 8575426439363348939, guid: f82c18bb7279a2f48ad25646af50125c,
+      objectReference: {fileID: 2686133615698853191, guid: eac64e89877cfeb43b7ccfb00277dec2,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[8]
       value: 
-      objectReference: {fileID: 5419987612408303223, guid: c9ab0849253a07f479232e2078e641ff,
+      objectReference: {fileID: 2686133615698853191, guid: eac64e89877cfeb43b7ccfb00277dec2,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}
       propertyPath: cartas.Array.data[9]
       value: 
-      objectReference: {fileID: 2633124270729356942, guid: deceb138c2af18341803b4f0d46dd74a,
+      objectReference: {fileID: 2686133615698853191, guid: eac64e89877cfeb43b7ccfb00277dec2,
         type: 3}
     - target: {fileID: 8460438947454045409, guid: 06c2dcb7e4f142e41a345cd1567937f4,
         type: 3}

@@ -915,7 +915,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 644810423, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 644810424, guid: 06c2dcb7e4f142e41a345cd1567937f4, type: 3}
       propertyPath: referenciaDePosicionDeCarta

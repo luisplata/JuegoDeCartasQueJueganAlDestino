@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 public class Evento : MonoBehaviour
 {
     [SerializeField] private TiposElegibles tipo;
-    [SerializeField] private List<Evento> eventosSiguientes;
+    [SerializeField] public List<Evento> eventosSiguientes;
     [SerializeField] private bool esElEventoFinal, esElTutorial;
     [SerializeField] private GameObject escenaMontada;
     [SerializeField] private AudioClip sonidoDeEvento;
@@ -35,7 +35,7 @@ public class Evento : MonoBehaviour
 
     public bool FinalizoElUltimoActo => escenaMontada.GetComponent<Escenario>().FinalizoLaAnimacion;
 
-    public Evento SiguienteEvento(Carta carta)
+    public Evento SiguienteEvento(CartaGenerica carta)
     {
         //si es el evento final y estamos en el tutorial nos vamos a la siguiente escena
         if (esElEventoFinal && esElTutorial)

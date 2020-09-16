@@ -7,7 +7,7 @@ public class ManejadorDeEventos : MonoBehaviour
 {
     [SerializeField] private List<Evento> listaDeEventos;
     [SerializeField] private AudioSource source;
-    private Evento eventoActual;
+    public Evento eventoActual;
     private Evento eventoReferencia;
     private GameObject referencia;
     private void Awake()
@@ -27,7 +27,7 @@ public class ManejadorDeEventos : MonoBehaviour
     }
 
 
-    public async void SiguienteEscena(Carta carta)
+    public async void SiguienteEscena(CartaDeEvento carta)
     {
         //comprobar primero miramos si tenemos escena cargada
         if (eventoActual == null)

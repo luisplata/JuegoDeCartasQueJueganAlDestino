@@ -1,18 +1,18 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Integracion;
+using UnityEngine;
 
-public class Carta : MonoBehaviour
+public class Carta : CartaGenerica
 {
-    [SerializeField] private TiposElegibles tipo;
     [SerializeField] private TipoDeCarta tipoDeCarta;
-    [SerializeField] private int puntaje;
-    [SerializeField] private string nombre;
+    public ClicksDeLaCarta click;
 
-    public Click click;
 
-    public int Puntaje => puntaje;
-    public TiposElegibles Tipo => tipo;
     public TipoDeCarta TipoDeCarta => tipoDeCarta;
-    public string Nombre => nombre;
+
+    public override void CambiarElTextoDentroDeLaCarta()
+    {
+        throw new System.NotImplementedException();
+    }
 
     private void OnMouseOver()
     {

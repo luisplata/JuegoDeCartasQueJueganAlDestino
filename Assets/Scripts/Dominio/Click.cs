@@ -2,5 +2,5 @@
 
 public abstract class Click : MonoBehaviour
 {
-    public abstract void OnClick(Carta carta);
+    public abstract void OnClick(CartaGenerica carta);
 }

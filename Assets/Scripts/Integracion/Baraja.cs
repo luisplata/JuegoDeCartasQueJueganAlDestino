@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Baraja : MonoBehaviour
 {
-    [SerializeField] private List<Carta> cartas;
+    [SerializeField] protected List<Carta> cartas;
 
     public Carta TomarCarta()
     {

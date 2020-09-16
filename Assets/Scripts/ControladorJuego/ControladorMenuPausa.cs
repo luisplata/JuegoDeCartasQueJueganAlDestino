@@ -42,7 +42,6 @@ public class ControladorMenuPausa : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        Debug.Log(controladorMenuOpciones.menuOpcionesActivo);
         //si hacemos click en la tecla ESC nos saldrá el menú de escape
         if (Input.GetKeyDown(KeyCode.Escape) && controladorMenuOpciones.menuOpcionesActivo == true)
         {

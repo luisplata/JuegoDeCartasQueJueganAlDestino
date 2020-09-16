@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 2
-  eventosSiguientes: []
+  eventosSiguientes:
+  - {fileID: 1597284394823916456, guid: 0bddfb9289400b9439f653ac1e9f5cbc, type: 3}
+  - {fileID: 3467283859103201919, guid: a42aec1f4a1f61843a8a8d5abbe30a49, type: 3}
   esElEventoFinal: 0
   esElTutorial: 0
   escenaMontada: {fileID: 1305556949436340467, guid: 2e8bcb679a7940e4d82a424a9847a38e,

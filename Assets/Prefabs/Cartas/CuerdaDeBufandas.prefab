@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e31bd1812571e8941be4c78b70c53df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 0
-  tipoDeCarta: 0
-  puntaje: 1
+  tipo: 2
   nombre: 7
+  puntaje: 1
+  tipoDeCarta: 0
   click: {fileID: 0}

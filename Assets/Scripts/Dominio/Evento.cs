@@ -17,6 +17,8 @@ public class Evento : MonoBehaviour
 
     public string Nombre => nombreEscenario;
 
+    public TiposElegibles Tipo => tipo;
+
     public void ComenzarEscena()
     {
         escenaMontada = Instantiate(escenaMontada, transform);
@@ -57,7 +59,6 @@ public class Evento : MonoBehaviour
         foreach (Evento e in eventosSiguientes)
         {
             bool elEventoTieneElMismoNombreQueLaCarta = e.Nombre == carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text;
-            Debug.Log("evento " + e.gameObject.name + " texto carta " + carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text);
             if (elEventoTieneElMismoNombreQueLaCarta)
             {
                 resultado = e;

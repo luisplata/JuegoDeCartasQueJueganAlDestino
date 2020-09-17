@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 2
-  tipoDeCarta: 0
-  puntaje: 1
   nombre: 11
+  puntaje: 1
+  tipoDeCarta: 0
   click: {fileID: 0}

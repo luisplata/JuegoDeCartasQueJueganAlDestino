@@ -89,6 +89,10 @@ public class CartasEnLaMano : MonoBehaviour
         bool esImpar = manejadorDeEventos.eventoActual.eventosSiguientes.Count % 2 != 0;
         foreach (Evento evento in manejadorDeEventos.eventoActual.eventosSiguientes)
         {
+            if(cartaUtilizada.Tipo == evento.Tipo)
+            {
+                continue;
+            }
             CartaDeEvento cartaDelEvento = barajaDeEventos.TomarCarta();
             GameObject objeto = new GameObject(cartaDelEvento.Nombre + cartaDelEvento.Tipo + cartaDelEvento.Puntaje);
             objeto.transform.SetParent(referenciaDePosicionDeCartaEvento.transform);

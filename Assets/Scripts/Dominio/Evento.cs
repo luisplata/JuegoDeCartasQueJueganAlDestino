@@ -13,6 +13,10 @@ public class Evento : MonoBehaviour
     [SerializeField] private bool esElEventoFinal, esElTutorial;
     [SerializeField] private GameObject escenaMontada;
     [SerializeField] private AudioClip sonidoDeEvento;
+    [SerializeField] private string nombreEscenario;
+
+    public string Nombre => nombreEscenario;
+
     public void ComenzarEscena()
     {
         escenaMontada = Instantiate(escenaMontada, transform);
@@ -52,7 +56,7 @@ public class Evento : MonoBehaviour
 
         foreach (Evento e in eventosSiguientes)
         {
-            bool elEventoTieneElMismoNombreQueLaCarta = e.gameObject.name == carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text;
+            bool elEventoTieneElMismoNombreQueLaCarta = e.Nombre == carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text;
             Debug.Log("evento " + e.gameObject.name + " texto carta " + carta.gameObject.transform.Find("Canvas").Find("Panel").Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text);
             if (elEventoTieneElMismoNombreQueLaCarta)
             {

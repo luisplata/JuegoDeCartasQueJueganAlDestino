@@ -50,3 +50,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 7882484114211896145, guid: 9860099eab7266e4bb00603040131a3c,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: 9ccbe3049e13571488fd6bef6e83477b, type: 3}
+  nombreEscenario: Mercenarios

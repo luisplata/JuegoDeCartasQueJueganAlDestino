@@ -51,3 +51,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 1872315882977656774, guid: e07ecc827781f0b49ba6a9433ea9f466,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: ba98023ac40bf754a9522aa7a4e21974, type: 3}
+  nombreEscenario: Tutorial

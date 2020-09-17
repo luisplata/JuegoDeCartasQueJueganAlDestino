@@ -51,3 +51,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 6305760930937456552, guid: 3a4abd71d4cd2d4448846044c552c263,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: f641111b777c706458abc83a0a17d068, type: 3}
+  nombreEscenario: Precipicio

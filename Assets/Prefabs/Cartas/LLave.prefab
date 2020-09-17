@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 3
-  tipoDeCarta: 0
-  puntaje: 1
   nombre: 12
+  puntaje: 1
+  tipoDeCarta: 0
   click: {fileID: 0}
 --- !u!61 &890200227774938753
 BoxCollider2D:

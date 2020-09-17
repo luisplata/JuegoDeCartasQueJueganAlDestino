@@ -52,3 +52,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 7868945760301037135, guid: 0c86e0a3cdf37d242943db9cdfb9de65,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: 75d7c58d158271d498f903bdfa74f6eb, type: 3}
+  nombreEscenario: Bosque

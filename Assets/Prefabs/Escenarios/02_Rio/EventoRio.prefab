@@ -46,5 +46,8 @@ MonoBehaviour:
   tipo: 0
   eventosSiguientes: []
   esElEventoFinal: 0
+  esElTutorial: 0
   escenaMontada: {fileID: 9012900532702135315, guid: a0f4e9ec6e96e024d8506adf3debe48a,
     type: 3}
+  sonidoDeEvento: {fileID: 0}
+  nombreEscenario: Rio

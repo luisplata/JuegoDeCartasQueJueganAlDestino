@@ -51,3 +51,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 7810138286962966591, guid: b60fc8379a234174c9a29f3d87efbb43,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: f48413399a8353542adf50b9fde53b02, type: 3}
+  nombreEscenario: Carcel

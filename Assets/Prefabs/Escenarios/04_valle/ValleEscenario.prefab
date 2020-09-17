@@ -51,3 +51,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 4261551173865660673, guid: 4bdcd7f37d262ca40b3ad1fc2fdb99df,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: 7ec737aea84ec744d8dfb029ae47cbef, type: 3}
+  nombreEscenario: Valle

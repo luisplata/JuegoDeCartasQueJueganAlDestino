@@ -52,3 +52,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 181716173132517079, guid: c8606fb130503504abf65e7c423a4850,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: 9ccbe3049e13571488fd6bef6e83477b, type: 3}
+  nombreEscenario: Puente Roto

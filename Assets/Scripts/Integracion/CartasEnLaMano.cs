@@ -97,7 +97,7 @@ public class CartasEnLaMano : MonoBehaviour
             //Tomar x cartas de la baraja y agregarlas a la mano
             CartaDeEvento cartaInstanciada = GameObject.Instantiate(cartaDelEvento, objeto.transform);//instanciamos la carta
             cartaInstanciada.click = clickEvento;
-            cartaDelEvento.textoParaCarta = evento.gameObject.name;
+            cartaInstanciada.textoParaCarta = evento.Nombre;
             cartaInstanciada.CambiarElTextoDentroDeLaCarta();
             cartasDeEventoEnLaMano.Add(cartaDelEvento);
 

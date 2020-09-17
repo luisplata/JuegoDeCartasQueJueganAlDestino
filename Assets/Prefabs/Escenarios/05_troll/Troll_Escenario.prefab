@@ -52,3 +52,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 2930922960568227058, guid: 67df77adafbd14f4eb34d233320339f1,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: 9ccbe3049e13571488fd6bef6e83477b, type: 3}
+  nombreEscenario: Troll

@@ -52,3 +52,4 @@ MonoBehaviour:
   escenaMontada: {fileID: 898027363476648279, guid: f252bb364b194194cb5a972696439f53,
     type: 3}
   sonidoDeEvento: {fileID: 8300000, guid: 7ec737aea84ec744d8dfb029ae47cbef, type: 3}
+  nombreEscenario: Soldado

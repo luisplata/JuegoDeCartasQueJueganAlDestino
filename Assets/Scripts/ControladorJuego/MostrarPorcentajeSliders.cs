@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MostrarPorcentajeSliders : MonoBehaviour
 {
-    Text porcentajeDelTexto;
+    public TextMeshProUGUI porcentajeDelTexto;
     // Start is called before the first frame update
     void Start()
     {
-        porcentajeDelTexto = GetComponent<Text>();
+        porcentajeDelTexto = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
